@@ -5,14 +5,16 @@ import "./globals.css";
 
 const allround = localFont({
   src: [
+    { path: "../fonts/AllroundGothic-XLig.otf", weight: "200", style: "normal" },
+    { path: "../fonts/AllroundGothic-XLigOblique.otf", weight: "200", style: "italic" },
     { path: "../fonts/AllroundGothic-Book.otf", weight: "400", style: "normal" },
-    { path: "../fonts/AllroundGothic-Book.otf", weight: "500", style: "normal" },
     { path: "../fonts/Allroundgothic-bookoblique.otf", weight: "400", style: "italic" },
-    { path: "../fonts/Allroundgothic-bookoblique.otf", weight: "500", style: "italic" },
+    { path: "../fonts/AllroundGothic-Medium.otf", weight: "500", style: "normal" },
+    { path: "../fonts/AllroundGothic-MediumOblique.otf", weight: "500", style: "italic" },
     { path: "../fonts/AllroundGothic-Demi.otf", weight: "600", style: "normal" },
-    { path: "../fonts/AllroundGothic-Demi.otf", weight: "700", style: "normal" },
     { path: "../fonts/Allroundgothic-demioblique.otf", weight: "600", style: "italic" },
-    { path: "../fonts/Allroundgothic-demioblique.otf", weight: "700", style: "italic" },
+    { path: "../fonts/AllroundGothic-Bold.otf", weight: "700", style: "normal" },
+    { path: "../fonts/AllroundGothic-BoldOblique.otf", weight: "700", style: "italic" },
   ],
   variable: "--font-allround",
   display: "swap",

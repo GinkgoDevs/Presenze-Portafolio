@@ -19,72 +19,47 @@ function PrimaryCta({ className = "" }: { className?: string }) {
 export function HomePage() {
   return (
     <main id="inicio">
-      <section className="relative pb-4 pt-6 md:pt-8 lg:pb-2 lg:pt-6" aria-labelledby="hero-title">
-        <div className="mx-auto w-full max-w-[1512px] px-6 md:px-8 lg:pl-16 lg:pr-[clamp(280px,34vw,420px)]">
-          <p className="eyebrow text-muted">Presenze — Comunicación digital</p>
-          <div className="mt-5 lg:mt-4 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-x-10">
-            <div className="min-w-0">
-              <div className="grid items-start gap-8 md:grid-cols-[minmax(0,1fr)_249px] md:gap-6 lg:grid-cols-1 lg:gap-0">
-                <div className="min-w-0">
-                  <h1
-                    id="hero-title"
-                    className="font-medium text-[48px] uppercase leading-[1.02] tracking-[-2px] text-ink md:text-[60px] md:leading-[61px] md:tracking-normal lg:text-[clamp(2.75rem,4.2vw,4rem)] lg:leading-[1.02] lg:tracking-[-0.04em]"
-                  >
-                    No somos
-                    <br />
-                    una agencia
-                    <br />
-                    enorme.
-                  </h1>
-                  <p className="mt-4 font-medium text-[28px] leading-[35px] tracking-[-1px] text-muted md:mt-6 lg:mt-3 lg:text-[clamp(1.35rem,1.8vw,1.75rem)] lg:leading-[1.2]">
-                    Y eso es algo muy bueno.
-                  </p>
-                </div>
-                <div className="relative mx-auto hidden aspect-square h-[220px] w-full max-w-[240px] justify-self-end md:mx-0 md:block md:h-[252px] md:w-[249px] md:max-w-none lg:hidden">
-                  <Image
-                    src="/brand/hero-mark.png"
-                    alt=""
-                    fill
-                    sizes="249px"
-                    quality={100}
-                    className="object-contain object-right md:object-right"
-                  />
-                </div>
-              </div>
-
-              <div className="mt-8 flex flex-col gap-6 md:grid md:grid-cols-2 md:items-start md:gap-6 lg:mt-6 lg:flex lg:flex-col lg:gap-0">
-                <div>
-                  <p className="font-medium text-[17px] leading-[26px] text-ink md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]">
-                    Somos un equipo de comunicación digital que trabaja cerca de cada marca.
-                  </p>
-                  <p className="mt-4 font-medium text-base leading-6 text-muted lg:mt-2">
-                    Branding · Diseño web · Social media
-                  </p>
-                </div>
-                <div className="flex flex-col items-start gap-8 md:items-end lg:mt-4 lg:items-start lg:gap-0">
-                  <PrimaryCta className="w-[280px] justify-center lg:w-auto lg:justify-start" />
-                  <a
-                    href="#diferencial"
-                    className="hidden h-11 items-center text-[13px] font-normal uppercase text-muted md:inline-flex lg:mt-3"
-                  >
-                    <span className="md:hidden lg:inline">Cerca de tu marca ↓</span>
-                    <span className="hidden md:inline lg:hidden">Conoce nuestro trabajo ↓</span>
-                  </a>
-                </div>
+      <section className="pb-4 pt-6 md:pt-8 lg:pb-2 lg:pt-6" aria-labelledby="hero-title">
+        <div className="mx-auto w-full max-w-[1512px] px-6 md:px-8 lg:px-16">
+          <h1
+            id="hero-title"
+            className="font-medium text-[48px] uppercase leading-[1.02] tracking-[-2px] text-ink md:text-[60px] md:leading-[61px] md:tracking-normal lg:text-[clamp(4.25rem,6.4vw,5.25rem)] lg:leading-[0.95] lg:tracking-[-0.045em] xl:text-[clamp(4.75rem,6.8vw,6.75rem)]"
+          >
+            <span className="lg:hidden">
+              No somos
+              <br />
+              una agencia
+              <br />
+              enorme.
+            </span>
+            <span className="hidden lg:inline">
+              No somos una
+              <br />
+              agencia enorme.
+            </span>
+          </h1>
+          <div className="mt-8 max-w-[34rem] lg:mt-6">
+            <p className="font-medium text-[28px] leading-[35px] tracking-[-1px] text-muted lg:text-[clamp(1.75rem,2.2vw,2.25rem)] lg:leading-[1.15]">
+              Y eso es algo muy bueno.
+            </p>
+            <div className="mt-6">
+              <p className="max-w-[36ch] font-medium text-[17px] leading-[26px] text-ink md:text-[18px] md:leading-[27px]">
+                Somos un equipo de comunicación digital que trabaja cerca de cada marca.
+              </p>
+              <p className="mt-4 font-medium text-base leading-6 text-muted">
+                Branding · Diseño web · Social media
+              </p>
+              <div className="mt-6 flex flex-col items-start gap-3">
+                <PrimaryCta className="w-[280px] justify-center lg:w-auto lg:justify-start" />
+                <a
+                  href="#diferencial"
+                  className="hidden h-11 items-center text-[13px] font-normal uppercase text-muted md:inline-flex"
+                >
+                  <span className="lg:hidden">Conoce nuestro trabajo ↓</span>
+                  <span className="hidden lg:inline">Cerca de tu marca ↓</span>
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="pointer-events-none absolute right-0 top-1/2 hidden w-[clamp(280px,32vw,400px)] -translate-y-1/2 lg:block">
-          <div className="relative aspect-square w-full">
-            <Image
-              src="/brand/hero-mark.png"
-              alt=""
-              fill
-              sizes="400px"
-              quality={100}
-              className="object-contain object-right"
-            />
           </div>
         </div>
       </section>
@@ -180,38 +155,27 @@ export function HomePage() {
             </p>
           </div>
 
-          <ul className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] md:grid md:grid-cols-3 md:gap-6 md:overflow-visible [&::-webkit-scrollbar]:hidden">
+          <ul className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] md:grid md:grid-cols-2 md:gap-6 md:overflow-visible lg:grid-cols-4 [&::-webkit-scrollbar]:hidden">
             {reels.map((reel) => (
               <li key={reel.number} className="w-[278px] shrink-0 snap-start md:w-auto">
                 <a
-                  href={instagramUrl}
+                  href={reel.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group block rounded-lg transition-colors duration-300 hover:bg-support/25 lg:p-6"
-                  aria-label={`${reel.title}. Portada pendiente. Abre el Instagram de PRESENZE.`}
+                  aria-label={`${reel.title}. Abre el reel en Instagram.`}
                 >
                   <div className="relative grid aspect-[278/494] place-items-center overflow-hidden rounded-lg bg-support md:aspect-[9/16]">
-                    <span className="absolute left-3 top-3 rounded bg-ink px-2 py-1 text-[13px] font-bold uppercase tracking-[1.2px] text-surface md:hidden">
-                      {reel.title}
-                    </span>
-                    <span className="eyebrow absolute left-5 top-5 hidden text-ink lg:block">
-                      Portada de muestra
-                    </span>
-                    <span className="display absolute bottom-20 left-5 hidden text-5xl text-ink/80 lg:block">
-                      {reel.number}
-                    </span>
-                    <div className="hidden flex-col items-center gap-4 px-4 text-center md:flex lg:hidden">
-                      <span className="eyebrow text-ink">Portada de muestra</span>
-                      <PlayMark filled className="size-11" />
-                    </div>
-                    <PlayMark filled className="size-11 md:hidden" />
-                    <PlayMark className="hidden size-16 lg:grid" />
+                    <Image
+                      src={reel.image}
+                      alt=""
+                      fill
+                      sizes="(min-width: 1024px) 320px, 278px"
+                      className="object-cover"
+                    />
+                    {reel.kind === "reel" ? <PlayMark filled className="relative z-10 size-11" /> : null}
                   </div>
-                  <p className="mt-2 text-[17px] font-semibold leading-[21px] text-ink md:hidden">Portada de muestra</p>
-                  <div className="mt-4 hidden items-baseline justify-between gap-4 md:flex lg:mt-4">
-                    <p className="text-[17px] font-semibold text-ink">{reel.title}</p>
-                    <p className="hidden text-[13px] text-muted lg:block">Portada pendiente</p>
-                  </div>
+                  <p className="mt-2 text-[17px] font-semibold leading-[21px] text-ink md:mt-4">{reel.title}</p>
                 </a>
               </li>
             ))}
@@ -257,9 +221,9 @@ export function HomePage() {
             {services.map((service) => (
               <li
                 key={service.number}
-                className="grid gap-4 border-b border-support py-8 transition-colors duration-300 hover:bg-support/25 md:grid-cols-[249px_minmax(0,1fr)] md:items-start md:gap-x-6 lg:grid-cols-[4rem_minmax(180px,420px)_minmax(0,1fr)_auto] lg:gap-x-10"
+                className="grid gap-4 border-b border-support py-8 transition-colors duration-300 hover:bg-support/25 md:grid-cols-[249px_minmax(0,1fr)] md:items-start md:gap-x-6 lg:grid-cols-[6.5rem_minmax(180px,420px)_minmax(0,1fr)_auto] lg:gap-x-10"
               >
-                <p className="text-base leading-5 text-muted lg:col-start-1 lg:row-start-1">{service.number}</p>
+                <p className="font-normal text-[40px] leading-none text-muted md:text-[48px] lg:col-start-1 lg:row-start-1 lg:text-[64px]">{service.number}</p>
                 <h3 className="font-medium text-[32px] uppercase leading-[40px] tracking-[-1px] text-ink md:text-[28px] md:leading-[35px] md:tracking-normal lg:col-start-2 lg:row-start-1 lg:text-[46px] lg:leading-[58px] lg:tracking-[-1.5px]">
                   {service.name}
                 </h3>
@@ -319,7 +283,9 @@ export function HomePage() {
                 key={step.number}
                 className="border-t border-support pt-6 transition-colors duration-300 hover:border-ink"
               >
-                <p className="font-normal text-[40px] leading-[50px] text-muted lg:text-[56px] lg:leading-[70px]">{step.number}</p>
+                <p className="font-normal text-[64px] leading-none text-muted md:text-[72px] lg:text-[88px]">
+                  {step.number}
+                </p>
                 <h3 className="mt-6 text-2xl font-semibold uppercase leading-[30px] text-ink lg:text-[22px] lg:leading-7">
                   {step.title}
                 </h3>
