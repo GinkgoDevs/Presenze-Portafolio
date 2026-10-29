@@ -94,7 +94,32 @@ export const principles = [
 ] as const;
 
 export const reels = [
-  { number: "01", title: "Reel 01" },
-  { number: "02", title: "Reel 02" },
-  { number: "03", title: "Reel 03" },
+  {
+    number: "01",
+    title: "Dorotea",
+    href: "https://www.instagram.com/p/DefWCkNqDX9/",
+    image: "/work/reel-01.jpg",
+    kind: "reel",
+  },
+  {
+    number: "02",
+    title: "Tafí del Valle",
+    href: "https://www.instagram.com/p/DaOeJiiJSnm/",
+    image: "/work/reel-02.jpg",
+    kind: "reel",
+  },
+  {
+    number: "03",
+    title: "Vivra",
+    href: "https://www.instagram.com/p/Deki8RkSgY3/",
+    image: "/work/reel-03.jpg",
+    kind: "reel",
+  },
+  {
+    number: "04",
+    title: "Patio Moldes",
+    href: "https://www.instagram.com/p/Dc3czoLB6aT/",
+    image: "/work/reel-04.jpg",
+    kind: "reel",
+  },
 ] as const;
